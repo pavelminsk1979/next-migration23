@@ -36,4 +36,7 @@ export class Usertyp {
 
   @OneToMany(() => LikeStatusForPostTyp, 'usertyp')
   public likeStatusForPostTyp: LikeStatusForPostTyp;
+
+  @Column({ nullable: true })
+  public hobby: string;
 }

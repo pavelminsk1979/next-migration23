@@ -69,7 +69,7 @@ dotenv.config();
       password: 'pavel',
       database: 'typeOrmDatabase',
       autoLoadEntities: true,
-      synchronize: true,
+      synchronize: false,
       //logging: ['query'],
     }),
     TypeOrmModule.forFeature([
