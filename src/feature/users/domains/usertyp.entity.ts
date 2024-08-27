@@ -4,7 +4,7 @@ import { LikeStatusForPostTyp } from '../../like-status-for-post/domain/typ-like
 
 @Entity()
 /*не создает таблицы без
-TypeOrmModule.forFeature([Usertyp]),
+TypeOrmModule.forFeature([Usertyp,Blogtyp]),
   в app.module.ts*/
 export class Usertyp {
   @OneToMany(() => Securitydevicetyp, 'usertyp')
